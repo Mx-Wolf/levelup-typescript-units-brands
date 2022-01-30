@@ -1,6 +1,7 @@
+import { Celsius, makeCelsius } from './i-face-brand-c';
 import { ControlPanel } from './i-face-control-panel';
 
-let targetTemperature = 0;
+let targetTemperature: Celsius = makeCelsius(0);
 
 export const controlPanel: ControlPanel = {
   getKettle: () => ({
